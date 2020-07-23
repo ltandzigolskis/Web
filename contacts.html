@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/layout.css">
+
 </head>
 <body>
 
@@ -16,10 +20,10 @@
 </header>
 <main>
     <form action="kurSiusimeDuomenis.php" method="POST" target="_blank">
-        <input placeholder="Your Name" type="text" id="fn"/><br>
-        <input placeholder="Your Email" type="email"/><br>
-        <input placeholder="Email Topic" type="text"/><br>
-        <textarea placeholder="Message" rows="4" cols="22" id="message"></textarea><br>
+        <input placeholder="Your Name" type="text" name="fullName"/><br>
+        <input placeholder="Your Email" type="email" name="email"/><br>
+        <input placeholder="Email Topic" type="text" name="topic"/><br>
+        <textarea placeholder="Message" rows="4" cols="22" name="message"></textarea><br>
         <input value="Send" type="submit"/>
     </form>
 </main>
