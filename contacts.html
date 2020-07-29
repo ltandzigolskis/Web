@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/design.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -11,12 +11,15 @@
 <body>
 
 <header>
-    <img src="img/logo.png" alt="logo">
-    <div class="meniu">
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Porfolio</a>
-        <a href="#">Contacts</a>
-    </div>
+    <div class="header-logo">
+        <img src="img/logo.png" alt="logo">
+    </div>    <nav>
+        <ul class="navLinks">
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Porfolio</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
 </header>
 <main>
     <form action="kurSiusimeDuomenis.php" method="POST" target="_blank">
@@ -27,6 +30,10 @@
         <input value="Send" type="submit"/>
     </form>
 </main>
+<aside>
+    <p>Some inportant info
+    </p>
+</aside>
 <footer>
     <span>&copy 2020 All rights reserved</span>
     <img src="img/logo.png" alt="logo">
