@@ -11,27 +11,6 @@ let b = 3;
 let c = 2;
 let d = 4;
 
-/*
-if (a < c ) {
-    x = c;
-}
-if (a > c) {
-    x = a;
-}
-if (b < d) {
-    y = b;
-}
-if ( b > d ) {
-    y = d;
-}
-
-if ( a < b && c < d && b > c) {
-    console.log(x , y)
-} else {
-    console.log('There is no connecting points!!!')
-}
-*/
-
 if (a < c ) {
     x = c;
 } else {
@@ -42,10 +21,20 @@ if (b < d) {
 } else {
     y = d;
 }
-
 if ( a < b && c < d && b > c && d > a) {
     console.log('connecting points: x=' + x + ' y=' + y)
 } else {
     console.log('There is no connecting points!!!')
 }
 
+let lemposBusena = false;
+let lempa = document.getElementById('lempute');
+
+function toggleLamp() {
+    if (lemposBusena) {
+        lempa.src = 'https://previews.123rf.com/images/ericmilos/ericmilos0912/ericmilos091200136/6109526-3d-render-of-light-bulb-on-white.jpg';
+    } else {
+        lempa.src = 'https://previews.123rf.com/images/murika/murika1511/murika151100069/48123160-bright-glowing-incandescent-light-bulb-on-a-white-background.jpg';
+    }
+    lemposBusena = !lemposBusena;
+}

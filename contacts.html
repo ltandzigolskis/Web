@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="css/design.css">
     <link rel="stylesheet" href="css/layout.css">
 
+
 </head>
 <body>
 
-<header>
+<header onclick="sleptiTurini()">
     <div class="header-logo">
         <img src="img/logo.png" alt="logo">
-    </div>    <nav>
+    </div>
+    <nav>
         <ul class="navLinks">
             <li><a href="index.html">About</a></li>
             <li><a href="portfolio.html">Porfolio</a></li>
@@ -22,22 +24,27 @@
     </nav>
 </header>
 <main>
-    <form action="kurSiusimeDuomenis.php" method="POST" target="_blank">
-        <input placeholder="Your Name" type="text" name="fullName"/><br>
-        <input placeholder="Your Email" type="email" name="email"/><br>
+    <form action="whereISendData.php" method="POST" target="_blank">
+        <input id="vardas" placeholder="Your Name" type="text" name="fullName"/><br>
+        <input id="email" placeholder="Your Email" type="email" name="email"/><br>
         <input placeholder="Email Topic" type="text" name="topic"/><br>
-        <textarea placeholder="Message" rows="4" cols="22" name="message"></textarea><br>
+        <textarea id="zinute" placeholder="Message" rows="4" cols="22" name="message"></textarea><br>
         <input value="Send" type="submit"/>
+        <button>Send by JS</button>
     </form>
+    <div id="rez"></div>
+    <img src="https://previews.123rf.com/images/ericmilos/ericmilos0912/ericmilos091200136/6109526-3d-render-of-light-bulb-on-white.jpg" onclick="toggleLamp()" id="lempute" width="150"/>
 </main>
 <aside>
-    <p>Some inportant info
-    </p>
+    <p>Some important info</p>
 </aside>
 <footer>
     <span>&copy 2020 All rights reserved</span>
     <img src="img/logo.png" alt="logo">
 </footer>
-
+<script src="JS/tasks.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="JS/JQcode.js"></script>
+<script src="JS/contactForm.js"></script>
 </body>
 </html>
